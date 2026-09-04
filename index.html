@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amit Kumar | Cloud Solutions Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --border: #1f2937;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --primary: #38bdf8;
+      --primary-dim: rgba(56, 189, 248, 0.1);
+      --accent: #818cf8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0 1.5rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 0;
+    }
+
+    header {
+      margin-bottom: 4rem;
+    }
+
+    .tag {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--primary);
+      background-color: var(--primary-dim);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-size: 2.75rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .lead {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin-bottom: 1.5rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 0.6rem 1.25rem;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #0b0f19;
+    }
+
+    .btn-primary:hover {
+      background-color: #7dd3fc;
+    }
+
+    .btn-outline {
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--text-muted);
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: border-color 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: #374151;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .cert-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+
+    .cert-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .cert-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="tag">Cloud Solutions Engineer</span>
+      <h1>Amit Kumar</h1>
+      <p class="lead">
+        Architecting resilient multi-cloud connectivity, robust identity perimeters, and automated infrastructure across OCI and Azure.
+      </p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/amit-kumar-a462b38b" target="_blank" rel="noopener" class="btn btn-primary">Connect on LinkedIn</a>
+        <a href="mailto:your-email@example.com" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Core Specializations</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Multi-Cloud Architecture</h3>
+          <p>Seamless cross-cloud interconnectivity, integrating Oracle Cloud Infrastructure (OCI) with Microsoft Azure for high-throughput, low-latency workloads.</p>
+        </div>
+        <div class="card">
+          <h3>IAM & Single Sign-On (SSO)</h3>
+          <p>Centralized identity lifecycle management, federated directory services, fine-grained access policies, and zero-trust identity architectures.</p>
+        </div>
+        <div class="card">
+          <h3>Cloud Networking & Security</h3>
+          <p>Designing secure VCNs/VNets, security lists, Network Security Groups (NSGs), transit routing, and granular edge-to-core perimeter security.</p>
+        </div>
+        <div class="card">
+          <h3>Observability & Monitoring</h3>
+          <p>Proactive alerting, full-stack logging architectures, telemetry analysis, and automated monitoring for hybrid cloud workloads.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certifications & Foundations</h2>
+      <ul class="cert-list">
+        <li class="cert-item"><span class="cert-dot"></span>OCI Certified Professional</li>
+        <li class="cert-item"><span class="cert-dot"></span>Microsoft Azure Certified</li>
+        <li class="cert-item"><span class="cert-dot"></span>Claude Code Associate Foundation</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Amit Kumar. Built for scalable cloud operations.</p>
+    </footer>
+  </div>
+</body>
+</html>
